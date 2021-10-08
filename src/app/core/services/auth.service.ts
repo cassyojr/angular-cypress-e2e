@@ -10,6 +10,8 @@ export class AuthService {
   constructor(private router: Router) {}
 
   public authenticate(email: string, password: string): boolean {
+    if (email === '' || password === '') return false;
+
     let isValidCredentials =
       email === 'admin@teste.com' && password === 'admin';
 

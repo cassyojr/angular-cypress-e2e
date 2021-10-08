@@ -1,11 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import {
-  ActivatedRoute,
-  ActivatedRouteSnapshot,
-  convertToParamMap,
-  Router,
-  RouterStateSnapshot,
-} from '@angular/router';
+import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AuthService } from '../services/auth.service';
 
