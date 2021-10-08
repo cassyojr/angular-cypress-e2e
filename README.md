@@ -31,3 +31,7 @@ Run `npm run ci:cy-open` to run angular server at https://localhost:4200 with cy
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 To get more help about Cypress documentation access the link https://docs.cypress.io/guides/overview/why-cypress 
+
+To get more help about Jasmine documentation access the link https://jasmine.github.io/
+
+To get more help about Jasmine documentation access the link https://karma-runner.github.io/latest/index.html
