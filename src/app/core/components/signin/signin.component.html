@@ -1,0 +1,19 @@
+<h2 class="text-center">SignIn</h2>
+
+<div class="card-container">
+  <form class="signin-form" [formGroup]="form" (ngSubmit)="authenticate()">
+    <mat-form-field appearance="fill">
+      <mat-label>E-mail</mat-label>
+      <input matInput name="email" formControlName="email" required />
+      <mat-error *ngIf="email.errors">You must enter a value</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input type="password" name="password" matInput formControlName="password" required />
+      <mat-error *ngIf="password.errors">You must enter a value</mat-error>
+    </mat-form-field>
+    <button mat-raised-button type="submit">Submit</button>
+  </form>
+
+  <p *ngIf="hasErrorOnSignIn" class="error text-center">Invalid email or password</p>
+</div>
