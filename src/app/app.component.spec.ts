@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -18,6 +19,7 @@ describe('AppComponent', () => {
         MatInputModule,
         MatButtonModule,
         BrowserAnimationsModule,
+        HttpClientModule
       ],
       declarations: [AppComponent],
     }).compileComponents();
@@ -27,11 +29,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'angular-cypress-e2e'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toContain('angular-cypress-e2e');
   });
 });

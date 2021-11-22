@@ -4,20 +4,22 @@ import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
 import { SignInComponent } from './components/signin/signin.component';
 
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [SignInComponent],
   imports: [
     CommonModule,
     CoreRoutingModule,
-    MatFormFieldModule,
-    MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
 })
 export class CoreModule {}
